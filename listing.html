@@ -1,0 +1,577 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <!--=============== basic  ===============-->
+        <meta charset="UTF-8">
+        <title>Homeradar - Real Estate Listing Template</title>
+        <meta name="robots" content="index, follow"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <!--=============== css  ===============-->	
+        <link type="text/css" rel="stylesheet" href="css/plugins.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="css/color.css">
+        <!--=============== favicons ===============-->
+        <link rel="shortcut icon" href="images/favicon.ico">
+    </head>
+    <body>
+        <!--loader-->
+        <div class="loader-wrap">
+            <div class="loader-inner">
+                <svg>
+                    <defs>
+                        <filter id="goo">
+                            <fegaussianblur in="SourceGraphic" stdDeviation="2" result="blur" />
+                            <fecolormatrix in="blur"   values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 5 -2" result="gooey" />
+                            <fecomposite in="SourceGraphic" in2="gooey" operator="atop"/>
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+        <!--loader end-->
+        <!-- main -->
+        <div id="main">
+            <!-- header -->
+            <header class="main-header">
+                <!--  logo  -->
+                <div class="logo-holder"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+                <!-- logo end  -->
+                <!-- nav-button-wrap--> 
+                <div class="nav-button-wrap color-bg nvminit">
+                    <div class="nav-button">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+                <!-- nav-button-wrap end-->	
+                <!--  add new  btn end -->
+                <!--  header-opt_btn -->
+                <div class="show-reg-form">
+                    <a href="#">
+                        <i class="fab fa-whatsapp" style="font-size: 20px;"></i>
+                    </a>
+                </div>
+                <!--  header-opt_btn end -->
+                <!--  cart-btn   -->
+                <div class="show-reg-form">
+                    <i class="fas fa-envelope"></i>
+                    <span>propertyofgujrat@gmail.com</span>
+                </div>
+                <!--  cart-btn end -->
+                <!--  login btn -->
+                <div class="show-reg-form">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>963-803-1092</span> &nbsp; - &nbsp;
+                    <span>966-252-1092</span> &nbsp; - &nbsp;
+                    <span>982-587-5439</span>
+                </div>
+                <!--  login btn  end -->
+                <!--  navigation --> 
+                <div class="nav-holder main-menu">
+                    <nav>
+                        <ul class="no-list-style">
+                            <li>
+                                <a href="#">Home</a>
+                                <!--second level end-->
+                            </li>
+                            <li>
+                                <a href="#" class="act-link">Listings</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- navigation  end -->
+                <!-- header-search-wrapper -->
+                <div class="header-search-wrapper novis_search">
+                    <div class="header-serach-menu">
+                        <div class="custom-switcher fl-wrap">
+                            <div class="fieldset fl-wrap">
+                                <input type="radio" name="duration-1"  id="buy_sw" class="tariff-toggle" checked>
+                                <label for="buy_sw">Buy</label>
+                                <input type="radio" name="duration-1" class="tariff-toggle"  id="rent_sw">
+                                <label for="rent_sw" class="lss_lb">Rent</label>
+                                <span class="switch color-bg"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-form">
+                        <form method="post"  name="registerform">
+                            <label>Keywords </label>
+                            <input type="text" placeholder="Address , Street , State..." value=""/>
+                            <label >Categories</label>
+                            <select data-placeholder="Categories" class="chosen-select on-radius no-search-select" >
+                                <option>All Categories</option>
+                                <option>House</option>
+                                <option>Apartment</option>
+                                <option>Hotel</option>
+                                <option>Villa</option>
+                                <option>Office</option>
+                            </select>
+                            <label style="margin-top:10px;" >Price Range</label>
+                            <div class="price-rage-item fl-wrap">
+                                <input type="text" class="price-range" data-min="100" data-max="100000"  name="price-range1"  data-step="1" value="1" data-prefix="$">
+                            </div>
+                            <button onclick="location.href='listing.html'" type="button"  class="btn float-btn color-bg"><i class="fal fa-search"></i> Search</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- header-search-wrapper end  -->				
+                <!-- wishlist-wrap--> 
+                <div class="header-modal novis_wishlist tabs-act">
+                    <ul class="tabs-menu fl-wrap no-list-style">
+                        <li class="current"><a href="#tab-wish">  Wishlist <span>- 3</span></a></li>
+                        <li><a href="#tab-compare">  Compare <span>- 2</span></a></li>
+                    </ul>
+                    <!--tabs -->                       
+                    <div class="tabs-container">
+                        <div class="tab">
+                            <!--tab -->
+                            <div id="tab-wish" class="tab-content first-tab">
+                                <!-- header-modal-container--> 
+                                <div class="header-modal-container scrollbar-inner fl-wrap" data-simplebar>
+                                    <!--widget-posts-->
+                                    <div class="widget-posts  fl-wrap">
+                                        <ul class="no-list-style">
+                                            <li>
+                                                <div class="widget-posts-img"><a href="listing-single.html"><img src="images/all/small/1.jpg" alt=""></a>  
+                                                </div>
+                                                <div class="widget-posts-descr">
+                                                    <h4><a href="listing-single.html">Affordable Urban Room</a></h4>
+                                                    <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> 40 Journal Square  , NJ, USA</a></div>
+                                                    <div class="widget-posts-descr-price"><span>Price: </span> $ 1500 / per month</div>
+                                                    <div class="clear-wishlist"><i class="fal fa-trash-alt"></i></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="widget-posts-img"><a href="listing-single.html"><img src="images/all/small/1.jpg" alt=""></a>
+                                                </div>
+                                                <div class="widget-posts-descr">
+                                                    <h4><a href="listing-single.html">Family House</a></h4>
+                                                    <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> 34-42 Montgomery St , NY, USA</a></div>
+                                                    <div class="widget-posts-descr-price"><span>Price: </span> $ 50.000</div>
+                                                    <div class="clear-wishlist"><i class="fal fa-trash-alt"></i></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="widget-posts-img"><a href="listing-single.html"><img src="images/all/small/1.jpg" alt=""></a>
+                                                </div>
+                                                <div class="widget-posts-descr">
+                                                    <h4><a href="listing-single.html">Apartment to Rent</a></h4>
+                                                    <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>75 Prince St, NY, USA</a></div>
+                                                    <div class="widget-posts-descr-price"><span>Price: </span> $100 / per night</div>
+                                                    <div class="clear-wishlist"><i class="fal fa-trash-alt"></i></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- widget-posts end-->
+                                </div>
+                                <!-- header-modal-container end--> 
+                                <div class="header-modal-top fl-wrap">
+                                    <div class="clear_wishlist color-bg"><i class="fal fa-trash-alt"></i> Clear all</div>
+                                </div>
+                            </div>
+                            <!--tab end -->
+                            <!--tab -->
+                            <div class="tab">
+                                <div id="tab-compare" class="tab-content">
+                                    <!-- header-modal-container--> 
+                                    <div class="header-modal-container scrollbar-inner fl-wrap" data-simplebar>
+                                        <!--widget-posts-->
+                                        <div class="widget-posts  fl-wrap">
+                                            <ul class="no-list-style">
+                                                <li>
+                                                    <div class="widget-posts-img"><a href="listing-single.html"><img src="images/all/small/1.jpg" alt=""></a>  
+                                                    </div>
+                                                    <div class="widget-posts-descr">
+                                                        <h4><a href="listing-single.html">Gorgeous house for sale</a></h4>
+                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  70 Bright St New York, USA </a></div>
+                                                        <div class="widget-posts-descr-price"><span>Price: </span> $ 52.100</div>
+                                                        <div class="clear-wishlist"><i class="fal fa-trash-alt"></i></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="widget-posts-img"><a href="listing-single.html"><img src="images/all/small/1.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="widget-posts-descr">
+                                                        <h4><a href="listing-single.html">Family Apartments</a></h4>
+                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> W 85th St, New York, USA </a></div>
+                                                        <div class="widget-posts-descr-price"><span>Price: </span> $ 72.400</div>
+                                                        <div class="clear-wishlist"><i class="fal fa-trash-alt"></i></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- widget-posts end-->
+                                    </div>
+                                    <!-- header-modal-container end--> 										
+                                    <div class="header-modal-top fl-wrap">
+                                        <a class="clear_wishlist color-bg" href="compare.html"><i class="fal fa-random"></i> Compare</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--tab end -->
+                        </div>
+                        <!--tabs end -->							
+                    </div>
+                </div>
+                <!--wishlist-wrap end -->                            
+                <!--header-opt-modal-->  
+                <div class="header-opt-modal novis_header-mod">
+                    <div class="header-opt-modal-container hopmc_init">
+                        <div class="header-opt-modal-item lang-item fl-wrap">
+                            <h4>Language: <span>EN</span></h4>
+                            <div class="header-opt-modal-list fl-wrap">
+                                <ul>
+                                    <li><a href="#" class="current-lan" data-lantext="EN">English</a></li>
+                                    <li><a href="#" data-lantext="FR">Franais</a></li>
+                                    <li><a href="#" data-lantext="ES">Espaol</a></li>
+                                    <li><a href="#" data-lantext="DE">Deutsch</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-opt-modal-item currency-item fl-wrap">
+                            <h4>Currency: <span>USD</span></h4>
+                            <div class="header-opt-modal-list fl-wrap">
+                                <ul>
+                                    <li><a href="#" class="current-lan" data-lantext="USD">USD</a></li>
+                                    <li><a href="#" data-lantext="EUR">EUR</a></li>
+                                    <li><a href="#" data-lantext="GBP">GBP</a></li>
+                                    <li><a href="#" data-lantext="RUR">RUR</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--header-opt-modal end -->  
+            </header>
+            <!-- header end  -->	
+            <!-- wrapper  -->	
+            <div id="wrapper">
+                <!-- content -->	
+                <div class="content">
+                    <!-- categoties-column -->
+                    <div class="categoties-column">
+                        <div class="categoties-column_container cat-list">
+                            <ul>
+                                <li><a href="#" class="act-category"><i class="fal fa-city"></i><span>Apartments</span></a></li>
+                                <li><a href="#"><i class="fal fa-car-building"></i><span>Offices</span></a></li>
+                                <li><a href="#"><i class="fal fa-home"></i><span>House</span></a></li>
+                                <li><a href="#"><i class="fal fa-hotel"></i><span>Hotel</span></a></li>
+                                <li><a href="#"><i class="fal fa-warehouse-alt"></i><span>Villa</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="progress-indicator">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="-1 -1 34 34">
+                                <circle cx="16" cy="16" r="15.9155"
+                                    class="progress-bar__background" />
+                                <circle cx="16" cy="16" r="15.9155"
+                                    class="progress-bar__progress 
+                                    js-progress-bar" />
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- categoties-column end -->
+                    <!-- Map -->
+                    <div class="map-container column-map   hid-mob-map">
+                        <div id="map-main"></div>
+                        <ul class="mapnavigation no-list-style">
+                            <li><a href="#" class="prevmap-nav mapnavbtn"><span><i class="fas fa-caret-left"></i></span></a></li>
+                            <li><a href="#" class="nextmap-nav mapnavbtn"><span><i class="fas fa-caret-right"></i></span></a></li>
+                        </ul>
+                        <div class="scrollContorl mapnavbtn tolt"   data-microtip-position="top-left" data-tooltip="Enable Scrolling"><span><i class="fal fa-unlock"></i></span></div>
+                        <div class="location-btn geoLocation tolt" data-microtip-position="top-left" data-tooltip="Your location"><span><i class="fal fa-location"></i></span></div>
+                        <div class="map-close"><i class="fas fa-times"></i></div>
+                    </div>
+                    <!-- Map end -->					
+                    <!-- top-search-content end -->					
+                    <!-- col-list-wrap -->
+                    <div class="col-list-wrap gray-bg ">
+                        <div class="col-list-wrap_opt fl-wrap">
+                            <div class="show-hidden-filter col-list-wrap_opt_btn color-bg">Show Filters</div>
+                            <div class="show-hidden-map not-vis_lap col-list-wrap_opt_btn color-bg">Show Map</div>
+                        </div>
+                        <!-- list-main-wrap-header-->
+                        <div class="list-main-wrap-header fl-wrap fixed-listing-header">
+                            <div class="container">
+                                <!-- list-main-wrap-title-->
+                                <div class="list-main-wrap-title">
+                                    <h2>Results For : <span>Gandhinagar </span><strong>5</strong></h2>
+                                </div>
+                                <!-- list-main-wrap-title end-->
+                                <!-- list-main-wrap-opt-->
+                                <div class="list-main-wrap-opt">
+                                    <!-- price-opt-->
+                                    <!-- <div class="price-opt">
+                                        <span class="price-opt-title">Sort   by:</span>
+                                        <div class="listsearch-input-item">
+                                            <select data-placeholder="Popularity" class="chosen-select no-search-select" >
+                                                <option>Popularity</option>
+                                                <option>Average rating</option>
+                                                <option>Price: low to high</option>
+                                                <option>Price: high to low</option>
+                                            </select>
+                                        </div>
+                                    </div> -->
+                                    <!-- price-opt end-->
+                                    <!-- price-opt-->
+                                    <div class="grid-opt">
+                                        <ul class="no-list-style">
+                                            <li class="grid-opt_act"><span class="two-col-grid act-grid-opt tolt" data-microtip-position="bottom" data-tooltip="Grid View"><i class="far fa-th"></i></span></li>
+                                            <li class="grid-opt_act"><span class="one-col-grid tolt" data-microtip-position="bottom" data-tooltip="List View"><i class="far fa-list"></i></span></li>
+                                        </ul>
+                                    </div>
+                                    <!-- price-opt end-->
+                                </div>
+                                <!-- list-main-wrap-opt end-->                    
+                            </div>
+                        </div>
+                        <!-- list-main-wrap-header end-->					
+                        <!-- listing-item-wrap-->
+                        <div class="listing-item-container fl-wrap">
+                            <!-- listing-item -->
+                            <div class="listing-item">
+                                <article class="geodir-category-listing fl-wrap">
+                                    <div class="geodir-category-img fl-wrap">
+                                        <a href="https://youtu.be/LRDy0MUOTTQ" target="_blank" class="geodir-category-img_item">
+                                            <img src="images/all/1.jpg" alt="">
+                                            <div class="overlay"></div>
+                                        </a>
+                                        <ul class="list-single-opt_header_cat">
+                                            <li><a href="#" class="cat-opt color-bg">Residential</a></li>
+                                            <li><a href="#" class="cat-opt blue-bg">Sale</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="geodir-category-content fl-wrap">
+                                        <h3><a href="https://youtu.be/LRDy0MUOTTQ" target="_blank">RESIDENTIAL PROPERTIES 4 RENT IN GANDHINAGAR</a></h3>
+                                        <div class="geodir-category-footer fl-wrap">
+                                            <a href="agent-single.html" class="gcf-company"><img src="images/avatar/1.jpg" alt=""><span>By Liza Rose</span></a>
+                                            <div class="listing-rating card-popup-rainingvis tolt" data-microtip-position="top" data-tooltip="Good" data-starrating2="4"></div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- listing-item end-->	
+                            <!-- listing-item -->
+                            <div class="listing-item">
+                                <article class="geodir-category-listing fl-wrap">
+                                    <div class="geodir-category-img fl-wrap">
+                                        <a href="https://youtu.be/FXw-kT0ljSg" target="_blank" class="geodir-category-img_item">
+                                            <img src="images/all/1.jpg" alt="">
+                                            <div class="overlay"></div>
+                                        </a>
+                                        <ul class="list-single-opt_header_cat">
+                                            <li><a href="#" class="cat-opt blue-bg">Rent</a></li>
+                                            <li><a href="#" class="cat-opt color-bg">Residential</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="geodir-category-content fl-wrap">
+                                        <h3><a href="https://youtu.be/FXw-kT0ljSg" target="_blank">RESIDENTIAL PROPERTIES 4 SELL IN GANDHINAGAR</a></h3>
+                                        <div class="geodir-category-footer fl-wrap">
+                                            <a href="agent-single.html" class="gcf-company"><img src="images/avatar/1.jpg" alt=""><span>By Anna Lips</span></a>
+                                            <div class="listing-rating card-popup-rainingvis tolt" data-microtip-position="top" data-tooltip="Excellent" data-starrating2="5"></div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- listing-item end-->	
+                            <!-- listing-item -->
+                            <div class="listing-item">
+                                <article class="geodir-category-listing fl-wrap">
+                                    <div class="geodir-category-img fl-wrap">
+                                        <a href="https://youtu.be/6YxUzdLEdhU" target="_blank" class="geodir-category-img_item">
+                                            <img src="images/all/1.jpg" alt="">
+                                            <div class="overlay"></div>
+                                        </a>
+                                        <ul class="list-single-opt_header_cat">
+                                            <li><a href="#" class="cat-opt blue-bg">Rent</a></li>
+                                            <li><a href="#" class="cat-opt color-bg">Commercial</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="geodir-category-content fl-wrap">
+                                        <h3><a href="https://youtu.be/6YxUzdLEdhU" target="_blank">COMMERCIAL PROPERTIES 4 RENT IN GANDHINAGAR</a></h3>
+                                        <div class="geodir-category-footer fl-wrap">
+                                            <a href="agent-single.html" class="gcf-company"><img src="images/avatar/1.jpg" alt=""><span>By Mark Frosty</span></a>
+                                            <div class="listing-rating card-popup-rainingvis tolt" data-microtip-position="top" data-tooltip="Good" data-starrating2="4"></div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- listing-item end-->							
+                            <!-- listing-item -->
+                            <div class="listing-item">
+                                <article class="geodir-category-listing fl-wrap">
+                                    <div class="geodir-category-img fl-wrap">
+                                        <a href="https://youtu.be/6YxUzdLEdhU" target="_blank" class="geodir-category-img_item">
+                                            <img src="images/all/1.jpg" alt="">
+                                            <div class="overlay"></div>
+                                        </a>
+                                        <ul class="list-single-opt_header_cat">
+                                            <li><a href="#" class="cat-opt blue-bg">Sale</a></li>
+                                            <li><a href="#" class="cat-opt color-bg">Commercial</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="geodir-category-content fl-wrap">
+                                        <h3><a href="https://youtu.be/6YxUzdLEdhU" target="_blank">COMMERCIAL PROPERTIES 4 SELL IN GANDHINAGAR</a></h3>
+                                        <div class="geodir-category-footer fl-wrap">
+                                            <a href="agent-single.html" class="gcf-company"><img src="images/avatar/1.jpg" alt=""><span>By Bill Trust</span></a>
+                                            <div class="listing-rating card-popup-rainingvis tolt" data-microtip-position="top" data-tooltip="Excellent
+                                                " data-starrating2="5"></div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- listing-item end-->								
+                            <!-- listing-item -->
+                            <div class="listing-item">
+                                <article class="geodir-category-listing fl-wrap">
+                                    <div class="geodir-category-img fl-wrap">
+                                        <a href="https://youtu.be/6YxUzdLEdhU" target="_blank" class="geodir-category-img_item">
+                                            <img src="images/all/1.jpg" alt="">
+                                            <div class="overlay"></div>
+                                        </a>
+                                        <ul class="list-single-opt_header_cat">
+                                            <li><a href="#" class="cat-opt blue-bg">Land</a></li>
+                                            <li><a href="#" class="cat-opt color-bg">Sale</a></li>
+                                        </ul>
+                                        
+                                    </div>
+                                    <div class="geodir-category-content fl-wrap">
+                                        <h3><a href="https://youtu.be/6YxUzdLEdhU" target="_blank">LAND (JAMIN) 4 SELL IN GANDHINAGAR</a></h3>
+                                        <div class="geodir-category-footer fl-wrap">
+                                            <a href="agent-single.html" class="gcf-company"><img src="images/avatar/1.jpg" alt=""><span>By Andy Sposty</span></a>
+                                            <div class="listing-rating card-popup-rainingvis tolt" data-microtip-position="top" data-tooltip="Average" data-starrating2="3"></div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- listing-item end-->														
+                        </div>
+                        <!-- listing-item-wrap end-->
+                        <!-- pagination-->
+                        <!-- <div class="pagination">
+                            <a href="#" class="prevposts-link"><i class="fa fa-caret-left"></i></a>
+                            <a href="#" >1</a>
+                            <a href="#" class="current-page">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#" class="nextposts-link"><i class="fa fa-caret-right"></i></a>
+                        </div> -->
+                        <!-- pagination end-->						
+                        <div class="small-footer fl-wrap">
+                            <div class="copyright"> © Homeradar 2020 .  All rights reserved.</div>
+                            <a class="custom-to-top color-bg custom-scroll-link" href="#main"><i class="fas fa-caret-up"></i></a>
+                        </div>
+                    </div>
+                    <!-- col-list-wrap end -->
+                </div>
+                <!-- content end -->	
+            </div>
+            <!-- wrapper end -->
+            <!--register form -->
+            <div class="main-register-wrap modal">
+                <div class="reg-overlay"></div>
+                <div class="main-register-holder tabs-act">
+                    <div class="main-register-wrapper modal_main fl-wrap">
+                        <div class="main-register-header color-bg">
+                            <div class="main-register-logo fl-wrap">
+                                <img src="images/white-logo.png" alt="">
+                            </div>
+                            <div class="main-register-bg">
+                                <div class="mrb_pin"></div>
+                                <div class="mrb_pin mrb_pin2"></div>
+                            </div>
+                            <div class="mrb_dec"></div>
+                            <div class="mrb_dec mrb_dec2"></div>
+                        </div>
+                        <div class="main-register">
+                            <div class="close-reg"><i class="fal fa-times"></i></div>
+                            <ul class="tabs-menu fl-wrap no-list-style">
+                                <li class="current"><a href="#tab-1"><i class="fal fa-sign-in-alt"></i> Login</a></li>
+                                <li><a href="#tab-2"><i class="fal fa-user-plus"></i> Register</a></li>
+                            </ul>
+                            <!--tabs -->                       
+                            <div class="tabs-container">
+                                <div class="tab">
+                                    <!--tab -->
+                                    <div id="tab-1" class="tab-content first-tab">
+                                        <div class="custom-form">
+                                            <form method="post"  name="registerform">
+                                                <label>Username or Email Address  * <span class="dec-icon"><i class="fal fa-user"></i></span></label>
+                                                <input name="email" type="text"    onClick="this.select()" value="">
+                                                <div class="pass-input-wrap fl-wrap">
+                                                    <label >Password  * <span class="dec-icon"><i class="fal fa-key"></i></span></label>
+                                                    <input name="password" type="password"  autocomplete="off" onClick="this.select()" value="" >
+                                                    <span class="eye"><i class="fal fa-eye"></i> </span>
+                                                </div>
+                                                <div class="lost_password">
+                                                    <a href="#">Lost Your Password?</a>
+                                                </div>
+                                                <div class="filter-tags">
+                                                    <input id="check-a3" type="checkbox" name="check">
+                                                    <label for="check-a3">Remember me</label>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <button type="submit"  class="log_btn color-bg"> LogIn </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!--tab end -->
+                                    <!--tab -->
+                                    <div class="tab">
+                                        <div id="tab-2" class="tab-content">
+                                            <div class="custom-form">
+                                                <form method="post"   name="registerform" class="main-register-form" id="main-register-form2">
+                                                    <label >Full Name  * <span class="dec-icon"><i class="fal fa-user"></i></span></label>
+                                                    <input name="name" type="text"    onClick="this.select()" value="">
+                                                    <label>Email Address  * <span class="dec-icon"><i class="fal fa-envelope"></i></span></label>
+                                                    <input name="email" type="text"    onClick="this.select()" value="">
+                                                    <div class="pass-input-wrap fl-wrap">
+                                                        <label >Password  * <span class="dec-icon"><i class="fal fa-key"></i></span></label>
+                                                        <input name="password" type="password"  autocomplete="off"  onClick="this.select()" value="" >
+                                                        <span class="eye"><i class="fal fa-eye"></i> </span>
+                                                    </div>
+                                                    <div class="filter-tags ft-list">
+                                                        <input id="check-a2" type="checkbox" name="check">
+                                                        <label for="check-a2">I agree to the <a href="#">Privacy Policy</a> and <a href="#">Terms and Conditions</a></label>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                    <button type="submit"     class="log_btn color-bg"> Register </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--tab end -->
+                                </div>
+                                <!--tabs end -->
+                                <div class="log-separator fl-wrap"><span>or</span></div>
+                                <div class="soc-log fl-wrap">
+                                    <p>For faster login or register use your social account.</p>
+                                    <a href="#" class="facebook-log"> Facebook</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--register form end -->
+        </div>
+        <!-- Main end -->
+        <!--=============== scripts  ===============-->
+        <script   src="js/jquery.min.js"></script>
+        <script   src="js/plugins.js"></script>
+        <script   src="js/scripts.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTdkdg58GBAxFmwjqBgMZqBLhICQKAsKA&libraries=places"></script>
+        <script src="js/map-plugins.js"></script>
+        <script src="js/map-listing.js"></script>  
+        
+    </body>
+</html>
