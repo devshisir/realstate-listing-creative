@@ -12,15 +12,15 @@
         var locations = [
             
             // gandhinagar 01
-            [locationData('https://youtu.be/LRDy0MUOTTQ', 'Sale', 'images/all/1.jpg', 'RESIDENTIAL PROPERTIES 4 RENT IN GANDHINAGAR', "",  "" , "Residential"), 23.162923439831086, 72.65002979647089, 1, markerIcon],
+            [locationData('https://youtube.com/playlist?list=PLM6CVFBq997yZYE6vF0Hq5QYnhpGNFE-v', 'Sale', 'images/all/1.jpg', 'RESIDENTIAL PROPERTIES 4 RENT IN GANDHINAGAR', "",  "" , "Residential"), 23.162923439831086, 72.65002979647089, 1, markerIcon],
             // gandhinagar 02
-            [locationData('https://youtu.be/FXw-kT0ljSg', 'Residential', 'images/all/9.jpg', 'RESIDENTIAL PROPERTIES 4 SELL IN GANDHINAGAR', "",    "" , "Rent"), 23.191825636362534, 72.60563819126867, 2, markerIcon],
+            [locationData('https://youtube.com/playlist?list=PLM6CVFBq997yZYE6vF0Hq5QYnhpGNFE-v', 'Residential', 'images/all/9.jpg', 'RESIDENTIAL PROPERTIES 4 SELL IN GANDHINAGAR', "",    "" , "Rent"), 23.191825636362534, 72.60563819126867, 2, markerIcon],
             // gandhinagar 03
-            [locationData('https://youtu.be/6YxUzdLEdhU', 'Commercial', 'images/all/6.jpg', 'COMMERCIAL PROPERTIES 4 RENT IN GANDHINAGAR', "",   "" , "Rent"), 23.13595895582269, 72.54271557426685, 3, markerIcon],
+            [locationData('https://youtube.com/playlist?list=PLM6CVFBq997yZYE6vF0Hq5QYnhpGNFE-v', 'Commercial', 'images/all/6.jpg', 'COMMERCIAL PROPERTIES 4 RENT IN GANDHINAGAR', "",   "" , "Rent"), 23.13595895582269, 72.54271557426685, 3, markerIcon],
             // gandhinagar 04
-            [locationData('https://youtu.be/6YxUzdLEdhU', 'Commercial', 'images/all/5.jpg', 'Kayak Point House', "",   "" , "Rent"), 23.139007458925445, 72.54775819509298, 4, markerIcon],
+            [locationData('https://youtube.com/playlist?list=PLM6CVFBq997yZYE6vF0Hq5QYnhpGNFE-v', 'Commercial', 'images/all/5.jpg', 'Kayak Point House', "",   "" , "Rent"), 23.139007458925445, 72.54775819509298, 4, markerIcon],
             // gandhinagar 05
-            [locationData('https://youtu.be/6YxUzdLEdhU', 'Sale', 'images/all/8.jpg', 'LAND (JAMIN) 4 SELL IN GANDHINAGAR', "",   "" , "Land"), 23.225572223638927, 72.62369817707182, 5, markerIcon],
+            [locationData('https://youtube.com/playlist?list=PLM6CVFBq997yZYE6vF0Hq5QYnhpGNFE-v', 'Sale', 'images/all/8.jpg', 'LAND (JAMIN) 4 SELL IN GANDHINAGAR', "",   "" , "Land"), 23.225572223638927, 72.62369817707182, 5, markerIcon],
 
         ];
 	    //   Map Infoboxes end ------------------

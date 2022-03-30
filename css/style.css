@@ -236,7 +236,7 @@ blockquote p {
 }
 .logo-holder img {
 	width:auto;
-	height:30px;
+	height:43px;
 }
 .header-search-button{
 	float:left;
@@ -5392,7 +5392,7 @@ section.single-par2  .scroll-down-wrap{
 	width:calc(100% - 930px);
 	position: fixed;
  	overflow:hidden;
-	left:80px;
+	 left: 47px;
 	top: 110px;
 }
 .map-container.column-map.right-position-map {
