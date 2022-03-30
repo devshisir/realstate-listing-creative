@@ -7501,3 +7501,10 @@ section.single-par2  .scroll-down-wrap{
 		background-position: center;
 	}
 }
+/* custom style */
+.map__marker{
+	position: absolute;
+	top: 30%;
+	right: 22%;
+	height: 40px;
+}
