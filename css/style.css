@@ -3204,6 +3204,7 @@ section.single-par2  .scroll-down-wrap{
 	padding:10px 0 0;
 	border-top: 1px solid #eee;
 	margin-top: 15px;
+	text-align: left;
 }
 .geodir-category-footer .btn {
 	margin-top: 0;
@@ -7506,5 +7507,4 @@ section.single-par2  .scroll-down-wrap{
 	position: absolute;
 	top: 30%;
 	right: 22%;
-	height: 40px;
 }
