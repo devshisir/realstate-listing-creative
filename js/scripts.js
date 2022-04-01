@@ -844,6 +844,9 @@ initIsotope();
     $(".map-close").on('click', function () {
         $(".hid-mob-map").removeClass("vis-hiddenmap");
     });
+    $(".map__marker").on('click', function () {
+        $(".hid-mob-map").removeClass("vis-hiddenmap");
+    });
     $(".show-hidden-filter2").on('click', function () {
         $(this).toggleClass("vis-hiddenfilter2");
         $(".list-searh-input-wrap").slideToggle(300);
