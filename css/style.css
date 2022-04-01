@@ -7508,3 +7508,17 @@ section.single-par2  .scroll-down-wrap{
 	top: 30%;
 	right: 22%;
 }
+
+@media (max-width: 1270px) {
+	.add-list span, .show-reg-form span {
+		width: max-content;
+		padding: 14px 50px;
+	}
+}
+
+@media (max-width: 576px) {
+	.logo-holder img {
+		width: auto;
+		height: 32px;
+	}
+}
