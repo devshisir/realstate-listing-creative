@@ -1,0 +1,621 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <!--=============== basic  ===============-->
+        <meta charset="UTF-8">
+        <title>Property of Gujarat</title>
+        <meta name="robots" content="index, follow"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <!--=============== css  ===============-->	
+        <link type="text/css" rel="stylesheet" href="css/plugins.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="css/color.css">
+        <!--=============== favicons ===============-->
+        <link rel="apple-touch-icon" href="./images/favicon_io/apple-touch-icon.png" sizes="180x180">
+        <link rel="icon" href="./images/favicon_io/favicon-32x32.png" sizes="32x32" type="image/png">
+        <link rel="icon" href="./images/favicon_io/favicon-16x16.png" sizes="16x16" type="image/png">
+    </head>
+    <body>
+        <!--loader-->
+        <div class="loader-wrap">
+            <div class="loader-inner">
+                <svg>
+                    <defs>
+                        <filter id="goo">
+                            <fegaussianblur in="SourceGraphic" stdDeviation="2" result="blur" />
+                            <fecolormatrix in="blur"   values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 5 -2" result="gooey" />
+                            <fecomposite in="SourceGraphic" in2="gooey" operator="atop"/>
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+        <!--loader end-->
+        <!-- main -->
+        <div id="main">
+            <!-- header -->
+            <header class="main-header">
+                <!--  logo  -->
+                <div class="logo-holder"><a href="listing.html"><img src="images/logo.png" alt=""></a></div>
+                <!-- logo end  -->
+                <!-- nav-button-wrap--> 
+                <div class="nav-button-wrap color-bg nvminit">
+                    <div class="nav-button">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+                <!-- nav-button-wrap end-->	
+                <!--  add new  btn end -->
+                <!--  header-opt_btn -->
+                <div class="show-reg-form">
+                    <a href="https://wa.me/+919638031092" target="_blank">
+                        <i class="fab fa-whatsapp" style="font-size: 20px;color: #48C857;"></i>
+                    </a>
+                </div>
+                <!--  header-opt_btn end -->
+                <!--  cart-btn   -->
+                <div class="show-reg-form">
+                    <i class="fas fa-envelope"></i>
+                    <span>propertyofgujrat@gmail.com</span>
+                </div>
+                <!--  cart-btn end -->
+                <!--  login btn -->
+                <div class="show-reg-form">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>963-803-1092</span> &nbsp;
+                    <span>966-252-1092</span> &nbsp;
+                    <span>982-587-5439</span>
+                </div>
+                <!--  login btn  end -->
+                <!--  navigation --> 
+                <div class="nav-holder main-menu">
+                    <nav>
+                        <ul class="no-list-style">
+                            <li>
+                                <a href="listing.html">Home</a>
+                                <!--second level end-->
+                            </li>
+                            <!-- <li>
+                                <a href="#" class="act-link">Listings</a>
+                            </li> -->
+                            
+                            <li>
+                                <a href="about.html" class="act-link">About</a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- navigation  end -->
+                <!-- header-search-wrapper -->
+                <div class="header-search-wrapper novis_search">
+                    <div class="header-serach-menu">
+                        <div class="custom-switcher fl-wrap">
+                            <div class="fieldset fl-wrap">
+                                <input type="radio" name="duration-1"  id="buy_sw" class="tariff-toggle" checked>
+                                <label for="buy_sw">Buy</label>
+                                <input type="radio" name="duration-1" class="tariff-toggle"  id="rent_sw">
+                                <label for="rent_sw" class="lss_lb">Rent</label>
+                                <span class="switch color-bg"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-form">
+                        <form method="post"  name="registerform">
+                            <label>Keywords </label>
+                            <input type="text" placeholder="Address , Street , State..." value=""/>
+                            <label >Categories</label>
+                            <select data-placeholder="Categories" class="chosen-select on-radius no-search-select" >
+                                <option>All Categories</option>
+                                <option>House</option>
+                                <option>Apartment</option>
+                                <option>Hotel</option>
+                                <option>Villa</option>
+                                <option>Office</option>
+                            </select>
+                            <label style="margin-top:10px;" >Price Range</label>
+                            <div class="price-rage-item fl-wrap">
+                                <input type="text" class="price-range" data-min="100" data-max="100000"  name="price-range1"  data-step="1" value="1" data-prefix="$">
+                            </div>
+                            <button onclick="location.href='listing.html'" type="button"  class="btn float-btn color-bg"><i class="fal fa-search"></i> Search</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- header-search-wrapper end  -->				
+                <!-- wishlist-wrap--> 
+                <div class="header-modal novis_wishlist tabs-act">
+                    <ul class="tabs-menu fl-wrap no-list-style">
+                        <li class="current"><a href="#tab-wish">  Wishlist <span>- 3</span></a></li>
+                        <li><a href="#tab-compare">  Compare <span>- 2</span></a></li>
+                    </ul>
+                    <!--tabs -->                       
+                    <div class="tabs-container">
+                        <div class="tab">
+                            <!--tab -->
+                            <div id="tab-wish" class="tab-content first-tab">
+                                <!-- header-modal-container--> 
+                                <div class="header-modal-container scrollbar-inner fl-wrap" data-simplebar>
+                                    <!--widget-posts-->
+                                    <div class="widget-posts  fl-wrap">
+                                        <ul class="no-list-style">
+                                            <li>
+                                                <div class="widget-posts-img"><a href="listing-single.html"><img src="images/all/small/1.jpg" alt=""></a>  
+                                                </div>
+                                                <div class="widget-posts-descr">
+                                                    <h4><a href="listing-single.html">Affordable Urban Room</a></h4>
+                                                    <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> 40 Journal Square  , NJ, USA</a></div>
+                                                    <div class="widget-posts-descr-price"><span>Price: </span> $ 1500 / per month</div>
+                                                    <div class="clear-wishlist"><i class="fal fa-trash-alt"></i></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="widget-posts-img"><a href="listing-single.html"><img src="images/all/small/1.jpg" alt=""></a>
+                                                </div>
+                                                <div class="widget-posts-descr">
+                                                    <h4><a href="listing-single.html">Family House</a></h4>
+                                                    <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> 34-42 Montgomery St , NY, USA</a></div>
+                                                    <div class="widget-posts-descr-price"><span>Price: </span> $ 50.000</div>
+                                                    <div class="clear-wishlist"><i class="fal fa-trash-alt"></i></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="widget-posts-img"><a href="listing-single.html"><img src="images/all/small/1.jpg" alt=""></a>
+                                                </div>
+                                                <div class="widget-posts-descr">
+                                                    <h4><a href="listing-single.html">Apartment to Rent</a></h4>
+                                                    <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>75 Prince St, NY, USA</a></div>
+                                                    <div class="widget-posts-descr-price"><span>Price: </span> $100 / per night</div>
+                                                    <div class="clear-wishlist"><i class="fal fa-trash-alt"></i></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- widget-posts end-->
+                                </div>
+                                <!-- header-modal-container end--> 
+                                <div class="header-modal-top fl-wrap">
+                                    <div class="clear_wishlist color-bg"><i class="fal fa-trash-alt"></i> Clear all</div>
+                                </div>
+                            </div>
+                            <!--tab end -->
+                            <!--tab -->
+                            <div class="tab">
+                                <div id="tab-compare" class="tab-content">
+                                    <!-- header-modal-container--> 
+                                    <div class="header-modal-container scrollbar-inner fl-wrap" data-simplebar>
+                                        <!--widget-posts-->
+                                        <div class="widget-posts  fl-wrap">
+                                            <ul class="no-list-style">
+                                                <li>
+                                                    <div class="widget-posts-img"><a href="listing-single.html"><img src="images/all/small/1.jpg" alt=""></a>  
+                                                    </div>
+                                                    <div class="widget-posts-descr">
+                                                        <h4><a href="listing-single.html">Gorgeous house for sale</a></h4>
+                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  70 Bright St New York, USA </a></div>
+                                                        <div class="widget-posts-descr-price"><span>Price: </span> $ 52.100</div>
+                                                        <div class="clear-wishlist"><i class="fal fa-trash-alt"></i></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="widget-posts-img"><a href="listing-single.html"><img src="images/all/small/1.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="widget-posts-descr">
+                                                        <h4><a href="listing-single.html">Family Apartments</a></h4>
+                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> W 85th St, New York, USA </a></div>
+                                                        <div class="widget-posts-descr-price"><span>Price: </span> $ 72.400</div>
+                                                        <div class="clear-wishlist"><i class="fal fa-trash-alt"></i></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- widget-posts end-->
+                                    </div>
+                                    <!-- header-modal-container end--> 										
+                                    <div class="header-modal-top fl-wrap">
+                                        <a class="clear_wishlist color-bg" href="compare.html"><i class="fal fa-random"></i> Compare</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--tab end -->
+                        </div>
+                        <!--tabs end -->							
+                    </div>
+                </div>
+                <!--wishlist-wrap end -->                            
+                <!--header-opt-modal-->  
+                <div class="header-opt-modal novis_header-mod">
+                    <div class="header-opt-modal-container hopmc_init">
+                        <ul class="custom__social__icon">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--header-opt-modal end -->  
+            </header>
+            <!-- header end  -->
+            <!-- wrapper  -->	
+            <div id="wrapper">
+                <!-- content -->	
+                <div class="content">
+                    <!--  section  -->
+                    <section class="hidden-section single-par2  " data-scrollax-parent="true">
+                        <div class="bg-wrap bg-parallax-wrap-gradien">
+                            <div class="bg par-elem "  data-bg="images/about-banner-img.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
+                        </div>
+                        <div class="container">
+                            <div class="section-title center-align big-title">
+                                <h2><span>About Us</span></h2>
+                                <h4>Property of Gujrat Ahmedabad - Gujrat - India</h4>
+                            </div>
+                            <div class="scroll-down-wrap">
+                                <div class="mousey">
+                                    <div class="scroller"></div>
+                                </div>
+                                <span>Scroll Down To Discover</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!--  section  end-->
+                    <!-- breadcrumbs-->
+                    <div class="breadcrumbs fw-breadcrumbs sp-brd fl-wrap">
+                        <div class="container">
+                            <div class="breadcrumbs-list">
+                                <a href="listing.html">Home</a> <span>About</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- breadcrumbs end -->	
+                    <!-- section -->
+                    <section>
+                        <div class="container">
+                            <!--about-wrap -->
+                            <div class="about-wrap">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="about-title fl-wrap">
+                                            <h2>Property of <span>Gujrat</span></h2>
+                                            <h4>Ahmedabad - Gujrat - India</h4>
+                                        </div>
+                                        <p>We provide reat estate consultancy services in major cities of gujrat for providing,</p>
+                                        <p>Funrnished / Unfurnished flats, bunglows, tenaments on rent / lease for individual or company guest house as per your desired locations.</p>
+                                        <p>Furnished / unfurnished shops, offices show rooms on rent / lease as per your desired locatuions.</p>
+                                        <p>Furnished / unfurnished ware houses shed, cold storage on rent / lease as per your desired locations.</p>
+                                        <p>Oled tenured / new tenured agricultural / non agricultural lands to buy / sale</p>
+                                        <p>We also provide residential furnitures as well commercial / office furnitures on rent as per your requirements for properties.</p>
+                                        <a href="contacts.html" class="btn small-btn float-btn color-bg">Contact Us / Write messages</a>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-6">
+                                        <div class="about-img fl-wrap">
+                                            <img src="images/all/1.jpg" class="respimg" alt="">
+                                            <div class="about-img-hotifer color-bg">
+                                                <p>Your website is fully responsive so visitors can view your content from their choice of device.</p>
+                                                <h4>Mark Antony</h4>
+                                                <h5>Homeradar CEO</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- about-wrap end  -->							
+                        </div>
+                    </section>
+                    <!-- section end-->	
+                    <!-- section -->
+                    <section class="color-bg small-padding">
+                        <div class="container">
+                            <div class="main-facts fl-wrap">
+                                <!-- inline-facts  -->
+                                <div class="inline-facts-wrap">
+                                    <div class="inline-facts">
+                                        <div class="milestone-counter">
+                                            <div class="stats animaper">
+                                                <div class="num" data-content="0" data-num="578">0</div>
+                                            </div>
+                                        </div>
+                                        <h6>Agents and Agencys</h6>
+                                    </div>
+                                </div>
+                                <!-- inline-facts end -->
+                                <!-- inline-facts  -->
+                                <div class="inline-facts-wrap">
+                                    <div class="inline-facts">
+                                        <div class="milestone-counter">
+                                            <div class="stats animaper">
+                                                <div class="num" data-content="0" data-num="12168">0</div>
+                                            </div>
+                                        </div>
+                                        <h6>Happy Customers Every Year</h6>
+                                    </div>
+                                </div>
+                                <!-- inline-facts end -->
+                                <!-- inline-facts  -->
+                                <div class="inline-facts-wrap">
+                                    <div class="inline-facts">
+                                        <div class="milestone-counter">
+                                            <div class="stats animaper">
+                                                <div class="num" data-content="0" data-num="2172">0</div>
+                                            </div>
+                                        </div>
+                                        <h6>Won Awards</h6>
+                                    </div>
+                                </div>
+                                <!-- inline-facts end -->
+                                <!-- inline-facts  -->
+                                <div class="inline-facts-wrap">
+                                    <div class="inline-facts">
+                                        <div class="milestone-counter">
+                                            <div class="stats animaper">
+                                                <div class="num" data-content="0" data-num="732">0</div>
+                                            </div>
+                                        </div>
+                                        <h6>New Listing Every Week</h6>
+                                    </div>
+                                </div>
+                                <!-- inline-facts end -->
+                            </div>
+                        </div>
+                        <div class="svg-bg">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"
+                                height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+                                <defs>
+                                    <lineargradient id="bg">
+                                        <stop offset="0%" style="stop-color:rgba(255, 255, 255, 0.6)"></stop>
+                                        <stop offset="50%" style="stop-color:rgba(255, 255, 255, 0.1)"></stop>
+                                        <stop offset="100%" style="stop-color:rgba(255, 255, 255, 0.6)"></stop>
+                                    </lineargradient>
+                                    <path id="wave" stroke="url(#bg)" fill="none" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+                                        s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+                                </defs>
+                                <g>
+                                    <use xlink:href="#wave">
+                                        <animatetransform attributeName="transform" attributeType="XML" type="translate" dur="10s" calcMode="spline"
+                                            values="270 230; -334 180; 270 230" keyTimes="0; .5; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                                            repeatCount="indefinite" />
+                                    </use>
+                                    <use xlink:href="#wave">
+                                        <animatetransform attributeName="transform" attributeType="XML" type="translate" dur="8s" calcMode="spline"
+                                            values="-270 230;243 220;-270 230" keyTimes="0; .6; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                                            repeatCount="indefinite" />
+                                    </use>
+                                    <use xlink:href="#wave">
+                                        <animatetransform attributeName="transform" attributeType="XML" type="translate" dur="6s" calcMode="spline"
+                                            values="0 230;-140 200;0 230" keyTimes="0; .4; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                                            repeatCount="indefinite" />
+                                    </use>
+                                    <use xlink:href="#wave">
+                                        <animatetransform attributeName="transform" attributeType="XML" type="translate" dur="12s" calcMode="spline" values="0 240;140 200;0 230"
+                                            keyTimes="0; .4; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+                                    </use>
+                                </g>
+                            </svg>
+                        </div>
+                    </section>
+                    <!-- section end-->						
+                    <!-- section -->
+                    <section >
+                        <div class="container">
+                            <!-- section-title -->
+                            <div class="section-title st-center fl-wrap">
+                                <h4>The Crew</h4>
+                                <h2>Our Awesome team</h2>
+                            </div>
+                            <!-- section-title end -->
+                            <div class="clearfix"></div>
+                            <div class="row">
+                                <!-- team-item -->
+                                <div class="col-md-4">
+                                    <div class="team-item fl-wrap">
+                                        <div class="team-img fl-wrap">
+                                            <img src="images/agency/agent/1.jpg" class="respimg" alt="">
+                                        </div>
+                                        <div class="team-content fl-wrap">
+                                            <h4>Alisa Gray</h4>
+                                            <h5>Business consultant</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                        <div class="team-footer fl-wrap">
+                                            <ul class="team-social">
+                                                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                                <li><a href="#" target="_blank"><i class="fab fa-vk"></i></a></li>
+                                            </ul>
+                                            <a href="mailto:yourmail@email.com" class="tolt tf-btn" data-microtip-position="top-right" data-tooltip="Write Message"><i class="fal fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- team-item end -->
+                                <!-- team-item -->
+                                <div class="col-md-4">
+                                    <div class="team-item fl-wrap">
+                                        <div class="team-img fl-wrap">
+                                            <img src="images/agency/agent/1.jpg" class="respimg" alt="">
+                                        </div>
+                                        <div class="team-content fl-wrap">
+                                            <h4>Austin Evon</h4>
+                                            <h5>Developer / Designer</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                        <div class="team-footer fl-wrap">
+                                            <ul class="team-social">
+                                                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                                <li><a href="#" target="_blank"><i class="fab fa-vk"></i></a></li>
+                                            </ul>
+                                            <a href="mailto:yourmail@email.com" class="tolt tf-btn" data-microtip-position="top-right" data-tooltip="Write Message"><i class="fal fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- team-item end -->							
+                                <!-- team-item -->
+                                <div class="col-md-4">
+                                    <div class="team-item fl-wrap">
+                                        <div class="team-img fl-wrap">
+                                            <img src="images/agency/agent/1.jpg" class="respimg" alt="">
+                                        </div>
+                                        <div class="team-content fl-wrap">
+                                            <h4>Taylor Roberts</h4>
+                                            <h5>Software Engineer</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                        <div class="team-footer fl-wrap">
+                                            <ul class="team-social">
+                                                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                                <li><a href="#" target="_blank"><i class="fab fa-vk"></i></a></li>
+                                            </ul>
+                                            <a href="mailto:yourmail@email.com" class="tolt tf-btn" data-microtip-position="top-right" data-tooltip="Write Message"><i class="fal fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- team-item end -->							
+                            </div>
+                        </div>
+                    </section>
+                    <!-- section end-->					
+                    <!--section  -->  
+                    <section class="parallax-section ps-bg video-section" data-scrollax-parent="true" id="sec2">
+                        <div class="bg-wrap">
+                            <div class="bg par-elem "  data-bg="images/about-video-banner.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
+                        </div>
+                        <div class="overlay"></div>
+                        <!--container-->
+                        <div class="container">
+                            <div class="video_section-title fl-wrap">
+                                <h2>Our Story Video</h2>
+                                <h4>Get ready to start your exciting journey. <br> Our agency will lead you through the amazing digital world</h4>
+                            </div>
+                            <a href="https://vimeo.com/158059890" class="promo-link big_prom color-bg   image-popup"><i class="fas fa-play"></i></a>
+                        </div>
+                    </section>
+                    <!--section end-->  					
+                    <!-- section -->
+                    <section class="gray-bg " style="padding-bottom: 0px;">
+                        <div class="container">
+                            <div class="section-title st-center fl-wrap">
+                                <h4>Testimonilas</h4>
+                                <h2>What Our Clients Say</h2>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="testimonials-slider-wrap">
+                            <div class="testimonials-slider">
+                                <!--slick-item -->
+                                <div class="slick-item">
+                                    <div class="text-carousel-item fl-wrap">
+                                        <div class="text-carousel-item-header fl-wrap">
+                                            <div class="popup-avatar"><img src="images/avatar/1.jpg" alt=""></div>
+                                            <div class="review-owner fl-wrap">Jessie Wilcox</div>
+                                            <div class="listing-rating card-popup-rainingvis" data-starrating2="5"> </div>
+                                        </div>
+                                        <div class="text-carousel-content fl-wrap">
+                                            <p> "In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo gravida. Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit, sed diam nonu mmy nibh euismod tincidunt ut laoreet dolore luptatum."</p>
+                                            <a href="#" class="testim-link color-bg">Via Facebook</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--slick-item end -->							
+                                <!--slick-item -->
+                                <div class="slick-item">
+                                    <div class="text-carousel-item fl-wrap">
+                                        <div class="text-carousel-item-header fl-wrap">
+                                            <div class="popup-avatar"><img src="images/avatar/1.jpg" alt=""></div>
+                                            <div class="review-owner fl-wrap">Austin Harisson</div>
+                                            <div class="listing-rating card-popup-rainingvis" data-starrating2="4"> </div>
+                                        </div>
+                                        <div class="text-carousel-content fl-wrap">
+                                            <p> "Feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te odio dignissim qui blandit praesent blandit praesent luptatum zzril.Vulputate urna. Nulla tristique mi a massa convallis."</p>
+                                            <a href="#" class="testim-link color-bg">Via Twitter</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--slick-item end -->
+                                <!--slick-item -->
+                                <div class="slick-item">
+                                    <div class="text-carousel-item fl-wrap">
+                                        <div class="text-carousel-item-header fl-wrap">
+                                            <div class="popup-avatar"><img src="images/avatar/1.jpg" alt=""></div>
+                                            <div class="review-owner fl-wrap">Garry Colonsi</div>
+                                            <div class="listing-rating card-popup-rainingvis" data-starrating2="4"> </div>
+                                        </div>
+                                        <div class="text-carousel-content fl-wrap">
+                                            <p> "In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo gravida. Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit, sed diam nonu mmy nibh euismod tincidunt ut laoreet dolore luptatum."</p>
+                                            <a href="#" class="testim-link color-bg">Via Facebook</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--slick-item end -->								
+                                <!--slick-item -->
+                                <div class="slick-item">
+                                    <div class="text-carousel-item fl-wrap">
+                                        <div class="text-carousel-item-header fl-wrap">
+                                            <div class="popup-avatar"><img src="images/avatar/1.jpg" alt=""></div>
+                                            <div class="review-owner fl-wrap">Antony Moore</div>
+                                            <div class="listing-rating card-popup-rainingvis" data-starrating2="5"> </div>
+                                        </div>
+                                        <div class="text-carousel-content fl-wrap">
+                                            <p> "Feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te odio dignissim qui blandit praesent blandit praesent luptatum zzril.Vulputate urna. Nulla tristique mi a massa convallis."</p>
+                                            <a href="#" class="testim-link color-bg">Via Twitter</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--slick-item end -->								
+                            </div>
+                        </div>
+                    </section>
+                    <!-- section end-->
+                </div>
+                <!-- content end -->	
+                <!-- footer -->	
+                <footer class="main-footer fl-wrap" style="padding-top: 0px;">
+                    <!--sub-footer-->
+                    <div class="sub-footer gray-bg fl-wrap">
+                        <div class="container">
+                            <div class="copyright"> © Property of Gujarat. All rights reserved.</div>
+                            <div class="subfooter-nav">
+                                <ul class="custom__social__icon">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--sub-footer end -->                     
+                </footer>
+                <!-- footer end -->
+            </div>
+            <!-- wrapper end -->
+            <!--secondary-nav -->
+            <div class="secondary-nav">
+                <div class="progress-indicator">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="-1 -1 34 34">
+                        <circle cx="16" cy="16" r="15.9155"
+                            class="progress-bar__background" />
+                        <circle cx="16" cy="16" r="15.9155"
+                            class="progress-bar__progress 
+                            js-progress-bar" />
+                    </svg>
+                </div>
+            </div>
+            <!--secondary-nav end -->			
+            <a class="to-top color-bg"><i class="fas fa-caret-up"></i></a>     
+        </div>
+        <!-- Main end -->
+        <!--=============== scripts  ===============-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

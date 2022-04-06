@@ -24,7 +24,7 @@
                     <defs>
                         <filter id="goo">
                             <fegaussianblur in="SourceGraphic" stdDeviation="2" result="blur" />
-                            <fecolormatrix in="blur"   values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 5 -2" result="gooey" />
+                            <fecolormatrix in="blur"  values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 5 -2" result="gooey" />
                             <fecomposite in="SourceGraphic" in2="gooey" operator="atop"/>
                         </filter>
                     </defs>
@@ -73,7 +73,7 @@
                     <nav>
                         <ul class="no-list-style">
                             <li>
-                                <a href="listing.html" class="act-link">Home</a>
+                                <a href="listing.html">Home</a>
                                 <!--second level end-->
                             </li>
                             <!-- <li>
@@ -84,7 +84,7 @@
                                 <a href="about.html">About</a>
                             </li>
                             <li>
-                                <a href="contacts.html">Contact</a>
+                                <a href="contacts.html" class="act-link">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -243,175 +243,148 @@
             <div id="wrapper">
                 <!-- content -->	
                 <div class="content">
-                    <!-- Map -->
-                    <div class="map-container column-map   hid-mob-map">
-                        <img style="height: 100%; width:100%;border-radius: 10px;" src="./images/all/gujarat-map.png" alt="">
-                        <a href="#" class="map__marker">
-                            <img src="./images/marker2.png" alt="">
-                        </a>
-                        <div class="map-close"><i class="fas fa-times"></i></div>
+                    <!--  section  -->
+                    <section class="hidden-section single-par2  " data-scrollax-parent="true">
+                        <div class="bg-wrap bg-parallax-wrap-gradien">
+                            <div class="bg par-elem "  data-bg="images/contact-us-banner.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
+                        </div>
+                        <div class="container">
+                            <div class="section-title center-align big-title">
+                                <h2><span>Contact Us</span></h2>
+                                
+                            </div>
+                            <div class="scroll-down-wrap">
+                                <div class="mousey">
+                                    <div class="scroller"></div>
+                                </div>
+                                <span>Scroll Down To Discover</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!--  section  end--> 		
+                    <!-- breadcrumbs-->
+                    <div class="breadcrumbs fw-breadcrumbs sp-brd fl-wrap">
+                        <div class="container">
+                            <div class="breadcrumbs-list">
+                                <a href="listing.html">Home</a> <span>Contacts</span>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Map end -->					
-                    <!-- top-search-content end -->					
-                    <!-- col-list-wrap -->
-                    <div class="col-list-wrap gray-bg ">
-                        <div class="col-list-wrap_opt fl-wrap">
-                            <div class="show-hidden-map not-vis_lap col-list-wrap_opt_btn color-bg">Show Map</div>
-                        </div>
-                        <!-- list-main-wrap-header-->
-                        <div class="list-main-wrap-header fl-wrap fixed-listing-header">
-                            <div class="container">
-                                <!-- list-main-wrap-title-->
-                                <div class="list-main-wrap-title">
-                                    <h2>Results For : <span>Gandhinagar </span><strong>5</strong></h2>
+                    <!-- breadcrumbs end -->
+                    <!-- section -->
+                    <section class="gray-bg small-padding">
+                        <div class="container">
+                            <div class="row">
+                                <!-- services-item -->
+                                <div class="col-md-4">
+                                    <div class="services-item fl-wrap">
+                                        <i class="fal fa-envelope"></i>
+                                        <h4>Our Mails <span>01</span></h4>
+                                        <p>Send us an email to get in touch and get help. About your any query.</p>
+                                        <a href="mailto:propertyofgujrat@gmail.com" class="serv-link sl-b">propertyofgujrat@gmail.com</a>
+                                    </div>
                                 </div>
-                                <!-- list-main-wrap-title end-->
-                                <!-- list-main-wrap-opt-->
-                                <div class="list-main-wrap-opt">
-                                    <!-- price-opt-->
-                                    <!-- <div class="price-opt">
-                                        <span class="price-opt-title">Sort   by:</span>
-                                        <div class="listsearch-input-item">
-                                            <select data-placeholder="Popularity" class="chosen-select no-search-select" >
-                                                <option>Popularity</option>
-                                                <option>Average rating</option>
-                                                <option>Price: low to high</option>
-                                                <option>Price: high to low</option>
-                                            </select>
-                                        </div>
-                                    </div> -->
-                                    <!-- price-opt end-->
-                                    <!-- price-opt-->
-                                    <div class="grid-opt">
-                                        <ul class="no-list-style">
-                                            <li class="grid-opt_act"><span class="two-col-grid act-grid-opt tolt" data-microtip-position="bottom" data-tooltip="Grid View"><i class="far fa-th"></i></span></li>
-                                            <li class="grid-opt_act"><span class="one-col-grid tolt" data-microtip-position="bottom" data-tooltip="List View"><i class="far fa-list"></i></span></li>
-                                        </ul>
+                                <!-- services-item  end-->
+                                <!-- services-item -->
+                                <div class="col-md-4">
+                                    <div class="services-item fl-wrap">
+                                        <i class="fal fa-phone-rotary"></i>
+                                        <h4>Our Phones<span>02</span></h4>
+                                        <p>Reach us using phone number and get call our support center 24/7</p>
+                                        <a href="#" class="serv-link sl-b" style="display: block;width:100%;text-align:left;">963-803-1092 </a><br>
+                                        <a href="#" class="serv-link sl-b" style="display: block;width:100%;text-align:left;">966-252-1092 </a><br>
+                                        <a href="#" class="serv-link sl-b" style="display: block;width:100%;text-align:left;">982-587-5439</a><br>
                                     </div>
-                                    <!-- price-opt end-->
                                 </div>
-                                <!-- list-main-wrap-opt end-->                    
+                                <!-- services-item  end-->
+                                <!-- services-item -->
+                                <div class="col-md-4">
+                                    <div class="services-item fl-wrap">
+                                        <i class="fal fa-map-marked"></i>
+                                        <h4>Our Adress <span>03</span></h4>
+                                        <p>Find us on this location to see our office.</p>
+                                        <a href="#" class="serv-link sl-b">Gandhinagar - India</a>
+                                    </div>
+                                </div>
+                                <!-- services-item  end-->								
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="contacts-opt fl-wrap">
+                                <div class="contact-social">
+                                    <span class="cs-title">Find us on: </span>
+                                    <ul>
+                                        <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn small-btn float-btn color-bg cf_btn">configure and check write message for inquiry</a>
+                            </div>
+                            <!--box-widget  -->			
+                            <div class="box-widget">
+                                <div class="box-widget-title single_bwt fl-wrap   ">Office Location</div>
+                                <p>Gandhinagar - India</p>
+                                <!--box-widget end-->
+                            </div>
+                            <!--box-widget-->
+                            <div class="box-widget fl-wrap">
+                                <div class="map-widget contacts-map fl-wrap">
+                                    <div class="map-container mapC_vis" style="position: relative;">
+                                        <!-- <div id="singleMap" data-latitude="40.7427837" data-longitude="-73.11445617675781"   data-infotitle="Our Loacation In NewYork" data-infotext="70 Bright St New York, USA"></div>
+                                        <div class="scrollContorl"></div> -->
+                                        <img src="./images/gandhinagar-map.png" alt="" style="height: 400px; width: 100%; object-fit:cover; border-radius:10px;">
+                                        <a href="#" style="position: absolute;top: 50%; left: 47%; transform:translate(-50%,-50%);">
+                                            <img src="./images/marker2.png" alt="" style="height: 40px;">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--box-widget end --> 									
+                        </div>
+                    </section>
+                    <!-- section end-->	
+                </div>
+                <!-- content end -->	
+                <!-- subscribe-wrap -->	
+                <div class="subscribe-wrap fl-wrap">
+                    <div class="container">
+                        <div class="subscribe-container fl-wrap color-bg">
+                            <div class="pwh_bg"></div>
+                            <div class="mrb_dec mrb_dec3"></div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="subscribe-header">
+                                        <h4>newsletter</h4>
+                                        <h3>Sign up for newsletter and get latest news and update</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-5">
+                                    <div class="footer-widget fl-wrap">
+                                        <div class="subscribe-widget fl-wrap">
+                                            <div class="subcribe-form">
+                                                <form id="subscribe">
+                                                    <input class="enteremail fl-wrap" name="email" id="subscribe-email" placeholder="Enter Your Email" spellcheck="false" type="text">
+                                                    <button type="submit" id="subscribe-button" class="subscribe-button color-bg">  Subscribe</button>
+                                                    <label for="subscribe-email" class="subscribe-message"></label>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <!-- list-main-wrap-header end-->					
-                        <!-- listing-item-wrap-->
-                        <div class="listing-item-container fl-wrap">
-                            <!-- listing-item -->
-                            <div class="listing-item">
-                                <article class="geodir-category-listing fl-wrap">
-                                    <div class="geodir-category-img fl-wrap">
-                                        <a href="https://youtube.com/playlist?list=PLM6CVFBq997yZYE6vF0Hq5QYnhpGNFE-v" target="_blank" class="geodir-category-img_item">
-                                            <img src="images/all/2.jpg" alt="">
-                                            <div class="overlay"></div>
-                                        </a>
-                                        <ul class="list-single-opt_header_cat">
-                                            <li><a href="#" class="cat-opt color-bg">Residential</a></li>
-                                            <li><a href="#" class="cat-opt blue-bg">Rent</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="geodir-category-content fl-wrap">
-                                        <h3><a href="https://youtube.com/playlist?list=PLM6CVFBq997yZYE6vF0Hq5QYnhpGNFE-v" target="_blank">RESIDENTIAL PROPERTIES 4 RENT IN GANDHINAGAR</a></h3>
-                                        <div class="geodir-category-footer">
-                                            <a href="#" style="font-size: 15px; font-weight:600; color:#3270FC">View all properties</a>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <!-- listing-item end-->	
-                            <!-- listing-item -->
-                            <div class="listing-item">
-                                <article class="geodir-category-listing fl-wrap">
-                                    <div class="geodir-category-img fl-wrap">
-                                        <a href="https://youtube.com/playlist?list=PLM6CVFBq997yZYE6vF0Hq5QYnhpGNFE-v" target="_blank" class="geodir-category-img_item">
-                                            <img src="images/all/1.jpg" alt="">
-                                            <div class="overlay"></div>
-                                        </a>
-                                        <ul class="list-single-opt_header_cat">
-                                            <li><a href="#" class="cat-opt color-bg">Residential</a></li>
-                                            <li><a href="#" class="cat-opt blue-bg">Sell</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="geodir-category-content fl-wrap">
-                                        <h3><a href="https://youtube.com/playlist?list=PLM6CVFBq997yZYE6vF0Hq5QYnhpGNFE-v" target="_blank">RESIDENTIAL PROPERTIES 4 SELL IN GANDHINAGAR</a></h3>
-                                        <div class="geodir-category-footer">
-                                            <a href="#" style="font-size: 15px; font-weight:600; color:#3270FC">View all properties</a>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <!-- listing-item end-->	
-                            <!-- listing-item -->
-                            <div class="listing-item">
-                                <article class="geodir-category-listing fl-wrap">
-                                    <div class="geodir-category-img fl-wrap">
-                                        <a href="https://youtube.com/playlist?list=PLM6CVFBq997yZYE6vF0Hq5QYnhpGNFE-v" target="_blank" class="geodir-category-img_item">
-                                            <img src="images/all/4.jpg" alt="">
-                                            <div class="overlay"></div>
-                                        </a>
-                                        <ul class="list-single-opt_header_cat">
-                                            <li><a href="#" class="cat-opt color-bg">Commercial</a></li>
-                                            <li><a href="#" class="cat-opt blue-bg">Rent</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="geodir-category-content fl-wrap">
-                                        <h3><a href="https://youtube.com/playlist?list=PLM6CVFBq997yZYE6vF0Hq5QYnhpGNFE-v" target="_blank">COMMERCIAL PROPERTIES 4 RENT IN GANDHINAGAR</a></h3>
-                                        <div class="geodir-category-footer">
-                                            <a href="#" style="font-size: 15px; font-weight:600; color:#3270FC">View all properties</a>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <!-- listing-item end-->							
-                            <!-- listing-item -->
-                            <div class="listing-item">
-                                <article class="geodir-category-listing fl-wrap">
-                                    <div class="geodir-category-img fl-wrap">
-                                        <a href="https://youtube.com/playlist?list=PLM6CVFBq997yZYE6vF0Hq5QYnhpGNFE-v" target="_blank" class="geodir-category-img_item">
-                                            <img src="images/all/3.jpg" alt="">
-                                            <div class="overlay"></div>
-                                        </a>
-                                        <ul class="list-single-opt_header_cat">
-                                            <li><a href="#" class="cat-opt color-bg">Commercial</a></li>
-                                            <li><a href="#" class="cat-opt blue-bg">Sale</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="geodir-category-content fl-wrap">
-                                        <h3><a href="https://youtube.com/playlist?list=PLM6CVFBq997yZYE6vF0Hq5QYnhpGNFE-v" target="_blank">COMMERCIAL PROPERTIES 4 SELL IN GANDHINAGAR</a></h3>
-                                        <div class="geodir-category-footer">
-                                            <a href="#" style="font-size: 15px; font-weight:600; color:#3270FC">View all properties</a>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <!-- listing-item end-->								
-                            <!-- listing-item -->
-                            <div class="listing-item">
-                                <article class="geodir-category-listing fl-wrap">
-                                    <div class="geodir-category-img fl-wrap">
-                                        <a href="https://youtube.com/playlist?list=PLM6CVFBq997yZYE6vF0Hq5QYnhpGNFE-v" target="_blank" class="geodir-category-img_item">
-                                            <img src="images/all/5.jpg" alt="">
-                                            <div class="overlay"></div>
-                                        </a>
-                                        <ul class="list-single-opt_header_cat">
-                                            <li><a href="#" class="cat-opt blue-bg">Land</a></li>
-                                            <li><a href="#" class="cat-opt color-bg">Sale</a></li>
-                                        </ul>
-                                        
-                                    </div>
-                                    <div class="geodir-category-content fl-wrap">
-                                        <h3><a href="https://youtube.com/playlist?list=PLM6CVFBq997yZYE6vF0Hq5QYnhpGNFE-v" target="_blank">LAND (JAMIN) 4 SELL IN GANDHINAGAR</a></h3>
-                                        <div class="geodir-category-footer">
-                                            <a href="#" style="font-size: 15px; font-weight:600; color:#3270FC">View all properties</a>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <!-- listing-item end-->														
-                        </div>
-                        <!-- listing-item-wrap end-->						
-                        <div class="small-footer fl-wrap">
+                    </div>
+                </div>
+                <!-- subscribe-wrap end -->	
+                <!-- footer -->	
+                <footer class="main-footer fl-wrap" style="padding-top: 0px;">
+                    <!--sub-footer-->
+                    <div class="sub-footer gray-bg fl-wrap">
+                        <div class="container">
                             <div class="copyright"> © Property of Gujarat. All rights reserved.</div>
-                            <div>
+                            <div class="subfooter-nav">
                                 <ul class="custom__social__icon">
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -419,23 +392,64 @@
                                     <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                                 </ul>
                             </div>
-                            <a class="custom-to-top color-bg custom-scroll-link" href="#main"><i class="fas fa-caret-up"></i></a>
                         </div>
                     </div>
-                    <!-- col-list-wrap end -->
-                </div>
-                <!-- content end -->	
+                    <!--sub-footer end -->                     
+                </footer>
+                <!-- footer end -->
             </div>
             <!-- wrapper end -->
+
+            <!--register form end -->
+            <!--secondary-nav -->
+            <div class="secondary-nav">
+                <div class="progress-indicator">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="-1 -1 34 34">
+                        <circle cx="16" cy="16" r="15.9155"
+                            class="progress-bar__background" />
+                        <circle cx="16" cy="16" r="15.9155"
+                            class="progress-bar__progress 
+                            js-progress-bar" />
+                    </svg>
+                </div>
+            </div>
+            <!--secondary-nav end -->			
+            <a class="to-top color-bg"><i class="fas fa-caret-up"></i></a>   
         </div>
         <!-- Main end -->
+        <!--contact-form-wrap -->	
+        <div class="contact-form-wrap">
+            <div class="contact-form-container">
+                <div class="contact-form-main fl-wrap">
+                    <div class="contact-form-header">
+                        <h4>Get In Touch</h4>
+                        <span class="close-contact-form"><i class="fal fa-times"></i></span>
+                    </div>
+                    <div id="contact-form" class="contact-form fl-wrap">
+                        <div id="message"></div>
+                        <form  class="custom-form" action="php/contact.php" name="contactform" id="contactform">
+                            <fieldset>
+                                <label>Your name* <span class="dec-icon"><i class="fas fa-user"></i></span></label>
+                                <input type="text" name="name" id="name" placeholder="Your Name *" value=""/>
+                                <label>Your mail* <span class="dec-icon"><i class="fas fa-envelope"></i></span></label>
+                                <input type="text"  name="email" id="email" placeholder="Email Address*" value=""/>
+                                <textarea name="comments"  id="comments" cols="40" rows="3" placeholder="Your Message:"></textarea>
+                            </fieldset>
+                            <button class="btn float-btn color-bg" style="margin-top:15px;" id="submit">Send Message</button>
+                        </form>
+                    </div>
+                    <!-- contact form  end--> 					
+                </div>
+            </div>
+            <div class="contact-form-overlay"></div>
+        </div>
+        <!--contact-form-wrap end-->	
         <!--=============== scripts  ===============-->
-        <script   src="js/jquery.min.js"></script>
-        <script   src="js/plugins.js"></script>
-        <script   src="js/scripts.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTdkdg58GBAxFmwjqBgMZqBLhICQKAsKA&libraries=places"></script>
-        <script src="js/map-plugins.js"></script>
-        <script src="js/map-listing.js"></script>  
-        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOU_API_KEY_HERE&libraries=places"></script>
+        <script src="js/map-single.js"></script>
     </body>
 </html>
