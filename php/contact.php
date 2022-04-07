@@ -28,9 +28,9 @@ if(trim($name) == '') {
 	exit();
 } 
 
-if(get_magic_quotes_gpc()) {
-	$comments = stripslashes($comments);
-}
+// if(get_magic_quotes_gpc()) {
+// 	$comments = stripslashes($comments);
+// }
 
 
 // Configuration option.
@@ -38,7 +38,7 @@ if(get_magic_quotes_gpc()) {
 // Example $address = "joe.doe@yourdomain.com";
 
 //$address = "example@themeforest.net";
-$address = "dimagalishev@gmail.com";
+$address = "contact.shisirimran@gmail.com";
 
 
 // Configuration option.

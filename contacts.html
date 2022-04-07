@@ -346,37 +346,6 @@
                     <!-- section end-->	
                 </div>
                 <!-- content end -->	
-                <!-- subscribe-wrap -->	
-                <div class="subscribe-wrap fl-wrap">
-                    <div class="container">
-                        <div class="subscribe-container fl-wrap color-bg">
-                            <div class="pwh_bg"></div>
-                            <div class="mrb_dec mrb_dec3"></div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="subscribe-header">
-                                        <h4>newsletter</h4>
-                                        <h3>Sign up for newsletter and get latest news and update</h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-1"></div>
-                                <div class="col-md-5">
-                                    <div class="footer-widget fl-wrap">
-                                        <div class="subscribe-widget fl-wrap">
-                                            <div class="subcribe-form">
-                                                <form id="subscribe">
-                                                    <input class="enteremail fl-wrap" name="email" id="subscribe-email" placeholder="Enter Your Email" spellcheck="false" type="text">
-                                                    <button type="submit" id="subscribe-button" class="subscribe-button color-bg">  Subscribe</button>
-                                                    <label for="subscribe-email" class="subscribe-message"></label>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <!-- subscribe-wrap end -->	
                 <!-- footer -->	
                 <footer class="main-footer fl-wrap" style="padding-top: 0px;">
@@ -428,7 +397,7 @@
                     </div>
                     <div id="contact-form" class="contact-form fl-wrap">
                         <div id="message"></div>
-                        <form  class="custom-form" action="php/contact.php" name="contactform" id="contactform">
+                        <form  class="custom-form" method="post" action="./php/contact.php" name="contactform" id="contactform">
                             <fieldset>
                                 <label>Your name* <span class="dec-icon"><i class="fas fa-user"></i></span></label>
                                 <input type="text" name="name" id="name" placeholder="Your Name *" value=""/>
@@ -436,7 +405,7 @@
                                 <input type="text"  name="email" id="email" placeholder="Email Address*" value=""/>
                                 <textarea name="comments"  id="comments" cols="40" rows="3" placeholder="Your Message:"></textarea>
                             </fieldset>
-                            <button class="btn float-btn color-bg" style="margin-top:15px;" id="submit">Send Message</button>
+                            <button class="btn float-btn color-bg" type="submit" style="margin-top:15px;" id="submit">Send Message</button>
                         </form>
                     </div>
                     <!-- contact form  end--> 					

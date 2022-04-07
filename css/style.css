@@ -7506,8 +7506,8 @@ section.single-par2  .scroll-down-wrap{
 /* custom style */
 .map__marker{
 	position: absolute;
-	top: 30%;
-	right: 22%;
+    top: 26%;
+    right: 28%;
 }
 
 @media (max-width: 1270px) {
@@ -7526,15 +7526,29 @@ section.single-par2  .scroll-down-wrap{
 .custom__social__icon{}
 .custom__social__icon li{
 	display: inline-block;
+	margin: 0px !important;
 }
 .custom__social__icon li a{
 	height: 30px;
 	width: 30px;
 	display: block;
-	font-size: 16px;
-	color: #566985;
+	font-size: 16px !important;
+	color: #566985 !important;
 	text-align: center;
 }
 .custom__social__icon li a:hover{
-	color: #3270FC;
+	color: #3270FC !important;
+}
+.custom-to-top {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 2px;
+    color: #fff;
+    float: inherit;
+    position: absolute;
+    top: 50%;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.13);
+    right: 30px;
+    transform: translateY(-50%);
 }
