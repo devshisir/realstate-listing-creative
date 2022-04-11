@@ -357,12 +357,14 @@ function initHomeradar() {
     $('.cf_btn').on("click", function (e) {
         e.preventDefault();
         $('.contact-form-wrap').fadeIn(400);
+        $('.contact-form-wrap').css('z-index','999999999999');
         $("html, body").addClass("hid-body");
         $("#message").slideUp(100);
         $(".custom-form").find("input[type=text], textarea").val("");
     });
     $('.contact-form-overlay , .close-contact-form').on("click", function () {
         $('.contact-form-wrap').hide();
+        $('.contact-form-wrap').css('z-index','-999999999999');
         $("html, body").removeClass("hid-body");
     });
     //   mailchimp------------------

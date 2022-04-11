@@ -288,7 +288,7 @@
                                         <p>Furnished / unfurnished ware houses shed, cold storage on rent / lease as per your desired locations.</p>
                                         <p>Oled tenured / new tenured agricultural / non agricultural lands to buy / sale</p>
                                         <p>We also provide residential furnitures as well commercial / office furnitures on rent as per your requirements for properties.</p>
-                                        <a href="contacts.html" class="btn small-btn float-btn color-bg">Contact Us / Write messages</a>
+                                        <a href="contacts.html" class="btn small-btn float-btn color-bg cf_btn">Contact Us / Write messages</a>
                                     </div>
                                     <div class="col-md-1"></div>
                                     <div class="col-md-6">
@@ -611,6 +611,33 @@
             </div>
             <!--secondary-nav end -->			
             <a class="to-top color-bg"><i class="fas fa-caret-up"></i></a>     
+            <!--contact-form-wrap -->	
+            <div class="contact-form-wrap">
+                <div class="contact-form-container">
+                    <div class="contact-form-main fl-wrap">
+                        <div class="contact-form-header">
+                            <h4>Get In Touch</h4>
+                            <span class="close-contact-form"><i class="fal fa-times"></i></span>
+                        </div>
+                        <div id="contact-form" class="contact-form fl-wrap">
+                            <div id="message"></div>
+                            <form  class="custom-form" method="post" action="./php/contact.php" name="contactform" id="contactform">
+                                <fieldset>
+                                    <label>Your name* <span class="dec-icon"><i class="fas fa-user"></i></span></label>
+                                    <input type="text" name="name" id="name" placeholder="Your Name *" value=""/>
+                                    <label>Your mail* <span class="dec-icon"><i class="fas fa-envelope"></i></span></label>
+                                    <input type="text"  name="email" id="email" placeholder="Email Address*" value=""/>
+                                    <textarea name="comments"  id="comments" cols="40" rows="3" placeholder="Your Message:"></textarea>
+                                </fieldset>
+                                <button class="btn float-btn color-bg" style="margin-top:15px;" id="submit">Send Message</button>
+                            </form>
+                        </div>
+                        <!-- contact form  end--> 					
+                    </div>
+                </div>
+                <div class="contact-form-overlay"></div>
+            </div>
+            <!--contact-form-wrap end-->
         </div>
         <!-- Main end -->
         <!--=============== scripts  ===============-->
