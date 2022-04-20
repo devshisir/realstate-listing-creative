@@ -7506,8 +7506,44 @@ section.single-par2  .scroll-down-wrap{
 /* custom style */
 .map__marker{
 	position: absolute;
-    top: 26%;
-    right: 28%;
+    top: 27%;
+    right: 29%;
+}
+.map__marker2{
+	position: absolute;
+	top: 34%;
+    right: 35%;
+}
+
+.map__marker3{
+	position: absolute;
+	bottom: 27%;
+    right: 24%;
+}
+.map__marker4{
+	position: absolute;
+	bottom: 16%;
+    right: 22%;
+}
+.map__marker5{
+	position: absolute;
+    top: 20%;
+    right: 34%;
+}
+.map__marker6{
+	position: absolute;
+    top: 43%;
+    right: 28.5%;
+}
+.map__marker7{
+	position: absolute;
+    top: 47.5%;
+    right: 21.5%;
+}
+.map__marker8{
+	position: absolute;
+    top: 35%;
+    right: 25.5%;
 }
 
 @media (max-width: 1270px) {
@@ -7521,6 +7557,18 @@ section.single-par2  .scroll-down-wrap{
 	.logo-holder img {
 		width: auto;
 		height: 32px;
+	}
+	.copyright{
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+	.listing__social__bottom{
+		text-align: left;
+	}
+	.listing__social__bottom li{
+		position: relative;
+		top: -20px;
 	}
 }
 .custom__social__icon{}
